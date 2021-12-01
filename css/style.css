@@ -147,9 +147,6 @@ main {
     background: #606C38;
     border-radius: 30px;
     border-bottom-left-radius: 0;
-    color: #fefae0;
-    text-align: center;
-    padding-top: 15px;
 }
 
 .card i::before{
@@ -253,8 +250,7 @@ main {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
+    min-height: 80vh;
     position: relative;
 }
 
