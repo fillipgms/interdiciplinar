@@ -8,6 +8,7 @@ body {
     font-family: 'Outfit', sans-serif;
     font-size: 16px;
     background: #fefae0;
+    overflow-x: hidden;
 }
 
 a {
@@ -28,7 +29,7 @@ header {
 }
 
 header ul li a:hover{
-    padding: 0 10px;
+    padding-inline: 5px;
 }
 
 header ul li a {
@@ -217,8 +218,56 @@ main {
 }
 
 #morte_first img {
-    width: 50%;
+    margin-top: 50px;
+    width: 70%;
     border-radius: 20px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.text {
+    width: 50%;
+}
+
+#morte_third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    background: #283618;
+    color: #fefae0;
+    min-height: 20vh;
+    text-align: center;
+}
+
+#morte_forth {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+#morte_forth h2 {
+    margin-bottom: 20px;
+}
+
+#fotos {
+    display: flex;
+}
+
+#fotos img {
+    width: 50%;
 }
 
 footer {
