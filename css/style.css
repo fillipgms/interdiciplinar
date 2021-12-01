@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    background: #fefae0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #dda15e;
+    position: fixed;
+    box-shadow: 0px 4px 20px 0px #0000002c;
+    z-index: 10;
+}
+
+header ul li a:hover{
+    padding: 0 10px;
+}
+
+header ul li a {
+    transition: padding 100ms;
+}
+
+header span {
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #fefae0;
+}
+
+nav {
+    background-color: #fefae0;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.ref {
+    background-color: #283618;
+    color: #fefae0;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+
+#first, #second, #third {
+    min-height: 100vh;
+}
+
+#first {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+    color: #fefae0;
+    position: relative;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/forca_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: left, top;
+}
+
+#first p {
+    margin-top: 10px;
+    width: 40%;
+}
+
+.custom-shape-divider-bottom-1638310065 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1638310065 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 169px;
+}
+
+.custom-shape-divider-bottom-1638310065 .shape-fill {
+    fill: #fefae0;
+}
+
+#second {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #f8f8f8;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    border-radius: 30px;
+    display: flex;
+    padding-top: 100px;
+    margin-bottom: 10px;
+}
+
+.card i{
+    position: absolute;
+    width: 280px;
+    height: 50px;
+    top: 40px;
+    left: -15px;
+    background: #606C38;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+    color: #fefae0;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.card i::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    width: 15px;
+    height: 30px;
+    background: #283618;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 2;
+    left: 0px;
+}
+
+.card i::after{
+    content: '';
+    position: absolute;
+    top: 50px;
+    width: 15px;
+    height: 15px;
+    background: #606C38;
+    z-index: 1;
+    left: 0px;
+}
+
+#third {
+    position: relative;
+    min-height: 80vh;
+}
+
+#third p {
+    background: #dda15e;
+    width: 80%;
+    margin-inline: auto;
+    padding: 30px 50px;
+    border-radius: 30px;
+}
+
+.custom-shape-divider-bottom-1638310377 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1638310377 svg {
+    position: relative;
+    display: block;
+    width: calc(139% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1638310377 .shape-fill {
+    fill: #606C38;
+}
+
+footer {
+    background: #606C38;
+    text-align: center;
+    padding-block: 20px;
+    color: #fefae0;
+}
