@@ -57,6 +57,10 @@ nav ul li{
     padding: 0 10px;
 }
 
+main {
+    min-height: 100vh;
+}
+
 .ref {
     background-color: #283618;
     color: #fefae0;
@@ -203,6 +207,18 @@ nav ul li{
 
 .custom-shape-divider-bottom-1638310377 .shape-fill {
     fill: #606C38;
+}
+
+#morte_first {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#morte_first img {
+    width: 50%;
+    border-radius: 20px;
 }
 
 footer {
