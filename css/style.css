@@ -78,6 +78,7 @@ nav ul li{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/forca_banner.jpg);
     background-repeat: no-repeat;
     background-position: left, top;
+    background-size: cover;
 }
 
 #first p {
