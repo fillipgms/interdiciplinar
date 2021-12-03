@@ -1,3 +1,8 @@
+@font-face {
+    font-family: jinx;
+    src: url(../fonts/adrip1.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -144,7 +149,7 @@ main {
     height: 50px;
     top: 40px;
     left: -15px;
-    background: #606C38;
+    background: var(--cor);
     border-radius: 30px;
     border-bottom-left-radius: 0;
 }
@@ -155,7 +160,7 @@ main {
     top: 50px;
     width: 15px;
     height: 30px;
-    background: #283618;
+    background: var(--darker);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     z-index: 2;
@@ -168,7 +173,7 @@ main {
     top: 50px;
     width: 15px;
     height: 15px;
-    background: #606C38;
+    background: var(--cor);
     z-index: 1;
     left: 0px;
 }
@@ -179,7 +184,8 @@ main {
 }
 
 #third p {
-    background: #dda15e;
+    background: var(--bg);
+    color: var(--color);
     width: 80%;
     margin-inline: auto;
     padding: 30px 50px;
@@ -204,12 +210,14 @@ main {
 }
 
 .custom-shape-divider-bottom-1638310377 .shape-fill {
-    fill: #606C38;
+    fill: var(--fill);
 }
 
 #morte_first {
     min-height: 80vh;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
 }
@@ -238,7 +246,10 @@ main {
 
 .text {
     width: 50%;
-    font-size: small;
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #morte_third{
@@ -246,7 +257,7 @@ main {
     flex-direction: column;
     justify-content: center;
     margin-top: 30px;
-    background: #283618;
+    background: var(--texto);
     color: #fefae0;
     min-height: 20vh;
     text-align: center;
@@ -274,10 +285,54 @@ main {
 }
 
 footer {
-    background: #606C38;
+    background: var(--footer);
     text-align: center;
     padding-block: 20px;
     color: #fefae0;
+}
+
+.traidor{
+    background-color: #2b2c28;
+}
+
+.pag2 {
+    background-color: #7de2d1;
+    color: #2b2c28;
+}
+
+#traidor_first, #traidor_second, #traidor_third {
+    min-height: 100vh;
+    background-color: #fffafb;
+}
+
+h1 span.jinx {
+    color: #7de2d1;
+    font-size: 50px;
+}
+
+span.jinx {
+    font-family: jinx;
+    font-size: 40px;
+    color: #339989;
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+
+.riscado {
+    text-decoration: line-through;
+}
+
+#traidor_first {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+    color: #fefae0;
+    position: relative;
+    background-image: url(../imgs/traidor/forca_banner.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 }
 
 @media (max-width: 768px){
@@ -292,6 +347,11 @@ footer {
         margin-top: 20px;
         width: 90%;
         margin-inline: auto;
+    }
+
+    #morte_third {
+        display: block;
+        padding: 10px 5px
     }
 
     .img {
