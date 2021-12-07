@@ -335,6 +335,26 @@ span.jinx {
     background-size: cover;
 }
 
+#links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 91vh;
+}
+
+#links h1 {
+    margin-bottom: 20px;
+}
+
+#links a {
+    color: #339989;
+}
+
+#links div {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 @media (max-width: 768px){
     header {
         padding: 10px 5px;
